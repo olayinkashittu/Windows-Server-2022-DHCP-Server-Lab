@@ -1,12 +1,13 @@
 # Windows-Server-2022-DHCP-Server-Lab
 Hands on Windows Server 2022 DHCP Server lab covering configuration, scope management, client IP assignment, testing, and troubleshooting.
 Windows Server 2022 DHCP Server Lab
-📌 Project Overview
+
+### 📌 Project Overview
 This project demonstrates the deployment and configuration of a DHCP Server on Windows Server 2022 in a hands-on virtual lab environment.
 
 The lab covers the installation of the DHCP Server role, static IP configuration, DHCP scope creation, DHCP options, automatic client IP assignment, verification, and troubleshooting.
 
-🎯 Lab Objectives
+### 🎯 Lab Objectives
 Configure a static IP address on Windows Server 2022
 Install the DHCP Server role
 Configure a DHCP scope
@@ -15,7 +16,8 @@ Assign IP addresses automatically to clients
 Verify DHCP leases and client connectivity
 Troubleshoot common DHCP issues
 Document the complete deployment process
-🖥️ Lab Environment
+
+### 🖥️ Lab Environment
 Component	Configuration
 Operating System	Windows Server 2022
 Server Name	DHCP-Server-2022
@@ -24,7 +26,10 @@ Server IP	192.168.10.10
 Subnet Mask	255.255.255.0
 Network	192.168.10.0/24
 DHCP Service	Windows Server DHCP
-🌐 Network Architecture
+
+### 🌐 Network Architecture
+
+```bash
                     WINDOWS SERVER 2022
                     DHCP-Server-2022
                     192.168.10.10
@@ -42,6 +47,9 @@ DHCP Service	Windows Server DHCP
              DHCP        DHCP
               │           │
         Dynamic IP    Dynamic IP
+
+```
+
 🔧 Project Configuration
 1. Static IP Configuration
 The DHCP server is configured with a static IP address:
