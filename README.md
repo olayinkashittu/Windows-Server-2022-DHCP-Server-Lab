@@ -50,6 +50,34 @@ DHCP Service	Windows Server DHCP
 
 ```
 
+### Project Structure
+
+```bash
+
+Windows-Server-2022-DHCP-Server-Lab/
+│
+├── README.md
+│
+├── images/
+│   ├── server-manager.png
+│   ├── dhcp-server-installation.png
+│   ├── dhcp-scope.png
+│   ├── dhcp-options.png
+│   ├── dhcp-lease.png
+│   └── client-ip-configuration.png
+│
+├── docs/
+│   ├── 01-server-setup.md
+│   ├── 02-static-ip-configuration.md
+│   ├── 03-dhcp-server-installation.md
+│   ├── 04-dhcp-scope-configuration.md
+│   ├── 05-dhcp-client-testing.md
+│   └── 06-troubleshooting.md
+│
+└── LICENSE
+
+```
+
 ### 🔧 Project Configuration
 
 1. Static IP Configuration
