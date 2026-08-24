@@ -29,3 +29,32 @@ A static IP address ensures that the DHCP server remains consistently reachable 
 IP Address:    192.168.10.10
 Subnet Mask:   255.255.255.0
 ```
+
+## Verification
+
+Open PowerShell or Command Prompt and run:
+
+```bash
+ipconfig
+```
+
+For detailed network information, run:
+
+```bash
+ipconfig /all
+```
+
+Verify that the server displays:
+
+```bash
+IPv4 Address:    192.168.10.10
+Subnet Mask:     255.255.255.0
+```
+
+## Screenshot
+
+Add the static IP configuration screenshot here:
+
+## Result
+
+The Windows Server 2022 DHCP server has been configured with a static IPv4 address of 192.168.10.10 and is ready for DHCP Server role installation.
