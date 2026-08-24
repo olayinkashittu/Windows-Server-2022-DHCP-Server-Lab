@@ -50,7 +50,8 @@ DHCP Service	Windows Server DHCP
 
 ```
 
-🔧 Project Configuration
+### 🔧 Project Configuration
+
 1. Static IP Configuration
 The DHCP server is configured with a static IP address:
 
@@ -60,7 +61,10 @@ Network:        192.168.10.0/24
 A static IP ensures that the DHCP server remains consistently reachable on the network.
 
 2. DHCP Server Installation
+   
 The DHCP Server role is installed using:
+
+```bash
 
 Server Manager
     ↓
@@ -71,6 +75,9 @@ Add Roles and Features
 Role-based or feature-based installation
     ↓
 DHCP Server
+
+```
+
 3. DHCP Scope Configuration
 A DHCP scope will define the range of IP addresses that can be dynamically assigned to client devices.
 
@@ -89,18 +96,23 @@ DNS Server
 DNS Domain Name
 These options allow DHCP clients to receive the network configuration they need automatically.
 
-🧪 Client Testing
+### 🧪 Client Testing
 After configuring the DHCP server, a client machine will be configured to obtain an IP address automatically.
 
 The following command can be used to verify the assigned configuration:
 
+```bash
 ipconfig /all
+```
+
 To test connectivity:
 
+```bash
 ping 192.168.10.10
+```
 The client should receive an IP address from the configured DHCP scope.
 
-🔍 Verification
+### 🔍 Verification
 The following items will be verified:
 
 DHCP Server role installation
@@ -112,12 +124,17 @@ Client IP assignment
 Default gateway
 DNS configuration
 Network connectivity
-🛠️ Troubleshooting
+
+### 🛠️ Troubleshooting
+
 Common DHCP troubleshooting checks include:
 
+```bash
 ipconfig /release
 ipconfig /renew
 ipconfig /all
+```
+
 Additional checks include:
 
 Confirming the DHCP service is running
@@ -126,7 +143,8 @@ Checking available addresses
 Verifying DHCP client configuration
 Checking network connectivity
 Reviewing DHCP leases
-📸 Screenshots
+
+### 📸 Screenshots
 Screenshots documenting the lab will be added as the configuration progresses.
 
 Planned screenshots:
@@ -138,9 +156,11 @@ DHCP options
 DHCP lease
 Client IP configuration
 Connectivity verification
-📚 Documentation
+
+### 📚 Documentation
 Detailed documentation will be organized in the docs/ directory:
 
+```bash
 docs/
 ├── 01-server-setup.md
 ├── 02-static-ip-configuration.md
@@ -148,7 +168,10 @@ docs/
 ├── 04-dhcp-scope-configuration.md
 ├── 05-dhcp-client-testing.md
 └── 06-troubleshooting.md
-💡 Key Skills Demonstrated
+```
+
+### 💡 Key Skills Demonstrated
+
 Windows Server 2022 Administration
 DHCP Server Deployment
 IPv4 Networking
@@ -158,7 +181,9 @@ Network Troubleshooting
 Client Network Configuration
 PowerShell
 Technical Documentation
-🚀 Project Highlights
+
+### 🚀 Project Highlights
+
 Deployed a Windows Server 2022 DHCP server
 Configured a static server IP
 Installed and configured the DHCP Server role
@@ -167,10 +192,11 @@ Configured DHCP network options
 Tested automatic client IP assignment
 Verified DHCP leases and network connectivity
 Documented the complete hands-on lab
-👨‍💻 Author
+
+### 👨‍💻 Author
 Olayinka Shittu
 
-This project is part of my hands-on IT infrastructure, Windows Server, networking, and troubleshooting portfolio.
+This project is part of my hands on IT infrastructure, Windows Server, networking, and troubleshooting portfolio.
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
