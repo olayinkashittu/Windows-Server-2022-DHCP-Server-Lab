@@ -97,15 +97,15 @@ This confirms that the DHCP server successfully issued an IP address to DC01.
 
 The following items have been successfully verified:
 
-• [x] DC01 connected to DHCP-LAB
-• [x] DHCP client enabled
-• [x] IPv4 address assigned automatically
-• [x] IP address: 192.168.10.100
-• [x] Subnet mask: 255.255.255.0
-• [x] DHCP server: 192.168.10.10
-• [x] DHCP lease confirmed
-• [x] DHCP server connectivity confirmed
-• [x] 0% packet loss
+- [x] DC01 connected to DHCP-LAB
+- [x] DHCP client enabled
+- [x] IPv4 address assigned automatically
+- [x] IP address: 192.168.10.100
+- [x] Subnet mask: 255.255.255.0
+- [x] DHCP server: 192.168.10.10
+- [x] DHCP lease confirmed
+- [x] DHCP server connectivity confirmed
+- [x] 0% packet loss
 
 ## Verification Summary
 
