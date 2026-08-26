@@ -181,4 +181,63 @@ The DHCP lease table contained:
 ```
 This confirmed that the DHCP server successfully issued and recorded the lease for DC01.
 
-## Troubleshooting Summary
+## 🛠️ Troubleshooting Summary
+
+| # | Problem | Solution |
+|---|---|---|
+| 1️⃣ | **DC01 received `169.254.x.x`** | ✅ Verified DHCP and network configuration |
+| 2️⃣ | **DHCP renewal failed** | ✅ Verified VirtualBox network connectivity |
+| 3️⃣ | **DC01 could not initially reach DHCP server** | ✅ Verified `DHCP-LAB` Internal Network |
+| 4️⃣ | **DHCP scope verification** | ✅ Confirmed `192.168.10.0/24` scope |
+| 5️⃣ | **DHCP binding** | ✅ Confirmed binding state was `True` |
+| 6️⃣ | **Firewall verification** | ✅ Enabled ICMPv4 inbound rule for testing |
+| 7️⃣ | **DHCP address assignment** | ✅ DC01 received `192.168.10.100` |
+| 8️⃣ | **Connectivity test** | ✅ Confirmed `0% packet loss` |
+| 9️⃣ | **DHCP lease verification** | ✅ Lease `192.168.10.100` confirmed |
+
+---
+
+## 🎯 Final Result
+
+The DHCP connectivity issue was successfully resolved.
+
+DC01 initially received an APIPA address:
+
+```bash
+169.254.17.130
+```
+
+After troubleshooting the network and DHCP configuration, DC01 successfully received:
+
+```bash
+IPv4 Address    : 192.168.10.100
+Subnet Mask     : 255.255.255.0
+DHCP Enabled    : Yes
+DHCP Server     : 192.168.10.10
+```
+
+## ✅ Final Verification
+
+
+```bash
+DHCP Server     → 192.168.10.10
+DHCP Client     → 192.168.10.100
+Network         → 192.168.10.0/24
+Virtual Network → DHCP-LAB
+Connectivity    → 0% packet loss
+DHCP Lease      → Confirmed
+Status          → Operational
+
+```
+
+## 🚀 Deployment Status
+DHCP deployment successfully completed and verified. ✅
+
+- [x] DHCP Server configured
+- [x] DHCP Scope configured
+- [x] DHCP Client configured
+- [x] DHCP Lease confirmed
+- [x] Network connectivity verified
+- [x] Troubleshooting completed
+- [x] 0% packet loss confirmed
+
