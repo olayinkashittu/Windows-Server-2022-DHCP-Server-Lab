@@ -197,7 +197,7 @@ This confirmed that the DHCP server successfully issued and recorded the lease f
 
 ---
 
-## 🎯 Final Result
+### 🎯 Final Result
 
 The DHCP connectivity issue was successfully resolved.
 
@@ -216,7 +216,7 @@ DHCP Enabled    : Yes
 DHCP Server     : 192.168.10.10
 ```
 
-## ✅ Final Verification
+### ✅ Final Verification
 
 
 ```bash
@@ -230,7 +230,7 @@ Status          → Operational
 
 ```
 
-## 🚀 Deployment Status
+### 🚀 Deployment Status
 DHCP deployment successfully completed and verified. ✅
 
 - [x] DHCP Server configured
