@@ -7,6 +7,18 @@ This project demonstrates the deployment and configuration of a DHCP Server on W
 
 The lab covers the installation of the DHCP Server role, static IP configuration, DHCP scope creation, DHCP options, automatic client IP assignment, verification, and troubleshooting.
 
+## 📊 Lab Status
+
+| Component | Status |
+|---|---|
+| **DHCP Server** | `192.168.10.10` ✅ |
+| **DC01** | `192.168.10.100` ✅ |
+| **Network** | `192.168.10.0/24` ✅ |
+| **Virtual Network** | `DHCP-LAB` ✅ |
+| **DHCP Lease** | Confirmed ✅ |
+| **Connectivity** | `0% packet loss` ✅ |
+| **Documentation** | Complete ✅ |
+
 ### 🎯 Lab Objectives
 Configure a static IP address on Windows Server 2022
 Install the DHCP Server role
