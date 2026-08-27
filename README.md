@@ -143,105 +143,122 @@ Windows-Server-2022-DHCP-Server-Lab/
 
 ```
 
-### 🔧 Project Configuration
+## 🚀 Deployment Process
 
-1. Static IP Configuration
-The DHCP server is configured with a static IP address:
+### 01 — Server Setup
 
-IP Address:     192.168.10.10
-Subnet Mask:    255.255.255.0
-Network:        192.168.10.0/24
-A static IP ensures that the DHCP server remains consistently reachable on the network.
+Initial Windows Server 2022 virtual machine setup and configuration.
 
-2. DHCP Server Installation
-   
-The DHCP Server role is installed using:
+
+### 02 — Static IP Configuration
+
+Configured the DHCP Server with the following static IP address:
 
 ```bash
-
-Server Manager
-    ↓
-Manage
-    ↓
-Add Roles and Features
-    ↓
-Role-based or feature-based installation
-    ↓
-DHCP Server
-
+IP Address    : 192.168.10.10
+Subnet Mask   : 255.255.255.0
 ```
 
-3. DHCP Scope Configuration
-A DHCP scope will define the range of IP addresses that can be dynamically assigned to client devices.
+### 03 — DHCP Server Installation
 
-Example:
+Installed the DHCP Server role using Windows Server Manager.
 
-Network:       192.168.10.0/24
-DHCP Range:    192.168.10.100 - 192.168.10.200
-Subnet Mask:   255.255.255.0
-The final scope values will be documented after configuration in the lab.
+### 04 — DHCP Scope Configuration
 
-4. DHCP Options
-The lab will configure appropriate DHCP options, such as:
-
-Default Gateway
-DNS Server
-DNS Domain Name
-These options allow DHCP clients to receive the network configuration they need automatically.
-
-### 🧪 Client Testing
-After configuring the DHCP server, a client machine will be configured to obtain an IP address automatically.
-
-The following command can be used to verify the assigned configuration:
+Created and configured the IPv4 DHCP scope:
 
 ```bash
-ipconfig /all
+Network       : 192.168.10.0/24
+Subnet Mask   : 255.255.255.0
 ```
 
-To test connectivity:
+### 05 — DHCP Client Testing
+
+Configured DC01 as a DHCP client and verified automatic IP address assignment.
+
+DC01 successfully received:
+
+```bash
+IPv4 Address  : 192.168.10.100
+DHCP Server   : 192.168.10.10
+```
+### 06 — Troubleshooting
+
+Documented DHCP troubleshooting procedures, including resolving an APIPA address and verifying network connectivity.
+
+
+### 🔍 Verification
+DHCP Client Configuration
+DC01 successfully received an IP address automatically:
+
+```bash
+IPv4 Address    : 192.168.10.100
+Subnet Mask     : 255.255.255.0
+DHCP Enabled    : Yes
+DHCP Server     : 192.168.10.10
+```
+
+### DHCP Lease Verification
+
+The DHCP server successfully recorded the client lease:
+
+```bash
+192.168.10.100
+```
+### Network Connectivity
+
+Connectivity between DC01 and the DHCP server was successfully verified:
 
 ```bash
 ping 192.168.10.10
 ```
-The client should receive an IP address from the configured DHCP scope.
 
-### 🔍 Verification
-The following items will be verified:
-
-DHCP Server role installation
-DHCP service status
-DHCP scope configuration
-Available IP address range
-Active DHCP leases
-Client IP assignment
-Default gateway
-DNS configuration
-Network connectivity
-
-### 🛠️ Troubleshooting
-
-Common DHCP troubleshooting checks include:
+Result:
 
 ```bash
-ipconfig /release
-ipconfig /renew
-ipconfig /all
+0% packet loss
 ```
 
-Additional checks include:
+### 🛠️ Troubleshooting Highlights
 
-Confirming the DHCP service is running
-Checking the DHCP scope
-Checking available addresses
-Verifying DHCP client configuration
-Checking network connectivity
-Reviewing DHCP leases
+During testing, DC01 initially received an APIPA address:
+
+```bash
+169.254.17.130
+```
+The following areas were verified:
+
+- [x] VirtualBox Internal Network
+- [x] DHCP-LAB network configuration
+- [x] Network adapter status
+- [x] DHCP server IP configuration
+- [x] DHCP scope
+- [x] DHCP server binding
+- [x] DHCP service
+- [x] Windows Firewall
+- [x] DHCP client configuration
+      
+After troubleshooting, DC01 successfully received:
+
+```bash
+192.168.10.100
+```
+
+The final connectivity test achieved:
+
+```bash
+0% packet loss
+```
 
 ### 📸 Screenshots
+Client IP Configuration
+
+DHCP Server Installation
+DHCP Scope
+DHCP Options
+DHCP Lease
 Screenshots documenting the lab will be added as the configuration progresses.
-
 Planned screenshots:
-
 DHCP Server installation
 DHCP Server Manager
 DHCP scope configuration
@@ -250,30 +267,9 @@ DHCP lease
 Client IP configuration
 Connectivity verification
 
-### 📚 Documentation
-Detailed documentation will be organized in the docs/ directory:
+## 🛠️ Skills Demonstrated
 
-```bash
-docs/
-├── 01-server-setup.md
-├── 02-static-ip-configuration.md
-├── 03-dhcp-server-installation.md
-├── 04-dhcp-scope-configuration.md
-├── 05-dhcp-client-testing.md
-└── 06-troubleshooting.md
-```
-
-### 💡 Key Skills Demonstrated
-
-Windows Server 2022 Administration
-DHCP Server Deployment
-IPv4 Networking
-IP Address Management
-DHCP Scope Management
-Network Troubleshooting
-Client Network Configuration
-PowerShell
-Technical Documentation
+**Windows Server 2022** • **DHCP** • **TCP/IP** • **IPv4** • **Network Configuration** • **VirtualBox** • **DHCP Scopes** • **DHCP Leases** • **IP Address Management** • **Network Troubleshooting** • **PowerShell** • **Command Prompt** • **Technical Documentation**
 
 ### 🚀 Project Highlights
 
