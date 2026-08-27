@@ -121,17 +121,7 @@ Document the complete deployment process
 
 Windows-Server-2022-DHCP-Server-Lab/
 │
-├── README.md
-│
-├── images/
-│   ├── server-manager.png
-│   ├── dhcp-server-installation.png
-│   ├── dhcp-scope.png
-│   ├── dhcp-options.png
-│   ├── dhcp-lease.png
-│   └── client-ip-configuration.png
-│
-├── docs/
+├── 📁 docs/
 │   ├── 01-server-setup.md
 │   ├── 02-static-ip-configuration.md
 │   ├── 03-dhcp-server-installation.md
@@ -139,7 +129,17 @@ Windows-Server-2022-DHCP-Server-Lab/
 │   ├── 05-dhcp-client-testing.md
 │   └── 06-troubleshooting.md
 │
-└── LICENSE
+├── 📁 images/
+│   ├── server-manager.png
+│   ├── dhcp-server-installation.png
+│   ├── dhcp-scope.png
+│   ├── dhcp-options.png
+│   ├── dhcp-lease.png
+│   └── client-ip-configuration.png
+│
+├── 📄 LICENSE
+│
+└── 📄 README.md
 
 ```
 
