@@ -1,11 +1,60 @@
-# Windows-Server-2022-DHCP-Server-Lab
-Hands on Windows Server 2022 DHCP Server lab covering configuration, scope management, client IP assignment, testing, and troubleshooting.
-Windows Server 2022 DHCP Server Lab
+# 🖥️ Windows Server 2022 DHCP Server Lab
 
-### 📌 Project Overview
-This project demonstrates the deployment and configuration of a DHCP Server on Windows Server 2022 in a hands-on virtual lab environment.
+## 📋 Overview
 
-The lab covers the installation of the DHCP Server role, static IP configuration, DHCP scope creation, DHCP options, automatic client IP assignment, verification, and troubleshooting.
+This project demonstrates the deployment, configuration, testing, and troubleshooting of a **DHCP Server on Windows Server 2022** using a virtualized lab environment.
+
+The lab demonstrates how a Windows Server DHCP service automatically assigns IP addresses to client machines and maintains DHCP leases.
+
+## 🎯 Project Objectives
+
+- Deploy Windows Server 2022 as a DHCP Server
+- Configure a static IP address for the DHCP Server
+- Install the DHCP Server role
+- Create and configure a DHCP IPv4 scope
+- Configure DHCP scope options
+- Connect a Windows Server client to the DHCP network
+- Verify automatic IP address assignment
+- Verify DHCP leases
+- Test network connectivity
+- Troubleshoot DHCP connectivity issues
+- Document the complete deployment process
+
+---
+
+## 🏗️ Lab Architecture
+
+```bash
+                         VirtualBox
+                            │
+                      Internal Network
+                         DHCP-LAB
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+              ▼                           ▼
+     DHCP-Server-2022                   DC01
+       Windows Server 2022          Windows Server 2022
+       DHCP Server                  DHCP Client
+       192.168.10.10               192.168.10.100
+              │                           │
+              └────────── DHCP ───────────┘
+
+```
+
+## 🖥️ Lab Environment
+
+| Component | Configuration |
+|---|---|
+| **Virtualization Platform** | `VirtualBox` |
+| **Virtual Network** | `DHCP-LAB` |
+| **DHCP Server** | `DHCP-Server-2022` |
+| **DHCP Server IP** | `192.168.10.10` |
+| **DHCP Client** | `DC01` |
+| **DHCP Client IP** | `192.168.10.100` |
+| **Network** | `192.168.10.0/24` |
+| **Subnet Mask** | `255.255.255.0` |
+
 
 ## 📊 Lab Status
 
@@ -29,15 +78,19 @@ Verify DHCP leases and client connectivity
 Troubleshoot common DHCP issues
 Document the complete deployment process
 
-### 🖥️ Lab Environment
-Component	Configuration
-Operating System	Windows Server 2022
-Server Name	DHCP-Server-2022
-Server Role	DHCP Server
-Server IP	192.168.10.10
-Subnet Mask	255.255.255.0
-Network	192.168.10.0/24
-DHCP Service	Windows Server DHCP
+## 🖥️ Lab Environment
+
+| Component | Configuration |
+|---|---|
+| **Virtualization Platform** | `VirtualBox` |
+| **Virtual Network** | `DHCP-LAB` |
+| **DHCP Server** | `DHCP-Server-2022` |
+| **DHCP Server IP** | `192.168.10.10` |
+| **DHCP Client** | `DC01` |
+| **DHCP Client IP** | `192.168.10.100` |
+| **Network** | `192.168.10.0/24` |
+| **Subnet Mask** | `255.255.255.0` |
+
 
 ### 🌐 Network Architecture
 
