@@ -6,6 +6,19 @@ This project demonstrates the deployment, configuration, testing, and troublesho
 
 The lab demonstrates how a Windows Server DHCP service automatically assigns IP addresses to client machines and maintains DHCP leases.
 
+### 🚀 Project Highlights
+
+- Deployed a **Windows Server 2022 DHCP Server**
+- Configured a **static IP address** for the DHCP Server
+- Installed and configured the **DHCP Server role**
+- Created and configured **DHCP IPv4 scopes**
+- Configured **DHCP scope options**
+- Tested **automatic client IP address assignment**
+- Verified **DHCP leases and network connectivity**
+- Troubleshot **APIPA and DHCP connectivity issues**
+- Documented the complete **hands-on DHCP deployment**
+  
+
 ## 🎯 Project Objectives
 
 - Deploy Windows Server 2022 as a DHCP Server
@@ -115,33 +128,6 @@ Document the complete deployment process
 
 ```
 
-### Project Structure
-
-```bash
-
-Windows-Server-2022-DHCP-Server-Lab/
-│
-├── 📁 docs/
-│   ├── 01-server-setup.md
-│   ├── 02-static-ip-configuration.md
-│   ├── 03-dhcp-server-installation.md
-│   ├── 04-dhcp-scope-configuration.md
-│   ├── 05-dhcp-client-testing.md
-│   └── 06-troubleshooting.md
-│
-├── 📁 images/
-│   ├── server-manager.png
-│   ├── dhcp-server-installation.png
-│   ├── dhcp-scope.png
-│   ├── dhcp-options.png
-│   ├── dhcp-lease.png
-│   └── client-ip-configuration.png
-│
-├── 📄 LICENSE
-│
-└── 📄 README.md
-
-```
 
 ## 🚀 Deployment Process
 
@@ -219,6 +205,25 @@ Result:
 0% packet loss
 ```
 
+
+
+### 📸 Screenshots
+Client IP Configuration
+
+DHCP Server Installation
+DHCP Scope
+DHCP Options
+DHCP Lease
+Screenshots documenting the lab will be added as the configuration progresses.
+Planned screenshots:
+DHCP Server installation
+DHCP Server Manager
+DHCP scope configuration
+DHCP options
+DHCP lease
+Client IP configuration
+Connectivity verification
+
 ### 🛠️ Troubleshooting Highlights
 
 During testing, DC01 initially received an APIPA address:
@@ -250,37 +255,76 @@ The final connectivity test achieved:
 0% packet loss
 ```
 
-### 📸 Screenshots
-Client IP Configuration
+### Project Structure
 
-DHCP Server Installation
-DHCP Scope
-DHCP Options
-DHCP Lease
-Screenshots documenting the lab will be added as the configuration progresses.
-Planned screenshots:
-DHCP Server installation
-DHCP Server Manager
-DHCP scope configuration
-DHCP options
-DHCP lease
-Client IP configuration
-Connectivity verification
+```bash
 
-## 🛠️ Skills Demonstrated
+Windows-Server-2022-DHCP-Server-Lab/
+│
+├── 📁 docs/
+│   ├── 01-server-setup.md
+│   ├── 02-static-ip-configuration.md
+│   ├── 03-dhcp-server-installation.md
+│   ├── 04-dhcp-scope-configuration.md
+│   ├── 05-dhcp-client-testing.md
+│   └── 06-troubleshooting.md
+│
+├── 📁 images/
+│   ├── server-manager.png
+│   ├── dhcp-server-installation.png
+│   ├── dhcp-scope.png
+│   ├── dhcp-options.png
+│   ├── dhcp-lease.png
+│   └── client-ip-configuration.png
+│
+├── 📄 LICENSE
+│
+└── 📄 README.md
+
+```
+
+### 🛠️ Skills Demonstrated
 
 **Windows Server 2022** • **DHCP** • **TCP/IP** • **IPv4** • **Network Configuration** • **VirtualBox** • **DHCP Scopes** • **DHCP Leases** • **IP Address Management** • **Network Troubleshooting** • **PowerShell** • **Command Prompt** • **Technical Documentation**
 
-### 🚀 Project Highlights
+### ✅ Project Completion
 
-Deployed a Windows Server 2022 DHCP server
-Configured a static server IP
-Installed and configured the DHCP Server role
-Created and managed DHCP address scopes
-Configured DHCP network options
-Tested automatic client IP assignment
-Verified DHCP leases and network connectivity
-Documented the complete hands-on lab
+- [x] Windows Server 2022 deployed
+- [x] Static IP configured
+- [x] DHCP Server role installed
+- [x] DHCP scope created
+- [x] DHCP scope configured
+- [x] DHCP options configured
+- [x] DC01 configured as DHCP client
+- [x] Automatic IP assignment verified
+- [x] DHCP lease verified
+- [x] Network connectivity verified
+- [x] `0% packet loss` confirmed
+- [x] DHCP troubleshooting completed
+- [x] Screenshots added
+- [x] Documentation completed
+
+### 📌 Project Summary
+
+This hands-on lab demonstrates practical experience deploying and managing a **Windows Server 2022 DHCP infrastructure**.
+
+The project covers:
+
+- Server configuration
+- DHCP Server role installation
+- DHCP scope creation
+- DHCP options configuration
+- Automatic client IP assignment
+- DHCP lease verification
+- Network connectivity testing
+- DHCP troubleshooting
+- Technical documentation
+
+The final deployment successfully provided **DC01** with the IP address `192.168.10.100` from **DHCP-Server-2022** at `192.168.10.10`.
+
+### ✅ Final Status
+
+**DHCP deployment successfully completed and verified.** ✅
 
 ### 👨‍💻 Author
 Olayinka Shittu
