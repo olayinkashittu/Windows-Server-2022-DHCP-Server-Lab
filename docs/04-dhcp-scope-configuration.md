@@ -178,7 +178,7 @@ You can also verify the scope details using:
 Get-DhcpServerv4Scope -ScopeId 192.168.10.0
 ```
 
-## 📊 DHCP Scope Configuration Summary
+### 📊 DHCP Scope Configuration Summary
 
 | Setting | Value |
 |---|---|
@@ -190,7 +190,7 @@ Get-DhcpServerv4Scope -ScopeId 192.168.10.0
 | **DHCP Server** | `192.168.10.10` |
 | **Status** | **Active** ✅ |
 
-## ✅ Verification Checklist
+### ✅ Verification Checklist
 
 - [x] DHCP Management Console opened
 - [x] IPv4 scope created
