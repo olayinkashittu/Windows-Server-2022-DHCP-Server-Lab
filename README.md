@@ -208,8 +208,14 @@ Result:
 
 
 ### 📸 Screenshots
-Client IP Configuration
 
+### DHCP Client IP Configuration
+
+DC01 successfully obtained an IPv4 address from the Windows Server 2022 DHCP server.
+
+![DHCP Client IP Configuration](images/client-ip-configuration.png)
+
+Client IP Configuration
 DHCP Server Installation
 DHCP Scope
 DHCP Options
