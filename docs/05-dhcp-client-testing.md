@@ -107,6 +107,12 @@ The following items have been successfully verified:
 - [x] DHCP server connectivity confirmed
 - [x] 0% packet loss
 
+### Verification
+
+The following screenshot confirms that DC01 successfully obtained its IP configuration from the DHCP server.
+
+![DHCP Client IP Configuration](../images/client-ip-configuration.png)
+
 ## Verification Summary
 
 The DHCP client on DC01 successfully obtained the IP address 192.168.10.100 from DHCP-Server-2022.
