@@ -215,6 +215,10 @@ DC01 successfully obtained an IPv4 address from the Windows Server 2022 DHCP ser
 
 ![DHCP Client IP Configuration](images/client-ip-configuration.png)
 
+### DHCP Scope
+
+![DHCP Scope](images/dhcp-scope.png)
+
 ### DHCP Lease
 
 ![DHCP Lease](images/dhcp-lease.png)
