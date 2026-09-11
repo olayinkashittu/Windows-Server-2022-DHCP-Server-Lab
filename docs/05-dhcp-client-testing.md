@@ -107,17 +107,20 @@ The following items have been successfully verified:
 - [x] DHCP server connectivity confirmed
 - [x] 0% packet loss
 
+## Client IP Configuration
+
+DC01 was configured as a DHCP client and successfully received an IP address automatically.
+
+- **IPv4 Address:** 192.168.10.100
+- **Subnet Mask:** 255.255.255.0
+- **DHCP Server:** 192.168.10.10
+- **DHCP Enabled:** Yes
+
 ### Verification
 
 The following screenshot confirms that DC01 successfully obtained its IP configuration from the DHCP server.
 
-### 📸 Screenshots
-
-### DHCP Client IP Configuration
-
-DC01 successfully obtained an IPv4 address from the Windows Server 2022 DHCP server.
-
-![DHCP Client IP Configuration](images/client-ip-configuration.png)
+![DHCP Client IP Configuration](../images/client-ip-configuration.png)
 
 ## Verification Summary
 
