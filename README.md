@@ -225,6 +225,10 @@ DC01 successfully obtained an IPv4 address from the Windows Server 2022 DHCP ser
 
 The screenshot shows a DHCP lease successfully assigned to a Windows client, confirming that the DHCP server is providing IP address configuration dynamically.
 
+### DHCP Server Installation
+
+![DHCP Server Installation](images/dhcp-server-installation.png)
+
 Client IP Configuration
 DHCP Server Installation
 DHCP Scope
