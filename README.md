@@ -229,6 +229,10 @@ The screenshot shows a DHCP lease successfully assigned to a Windows client, con
 
 ![DHCP Server Installation](images/dhcp-server-installation.png)
 
+### DHCP Server Installation
+
+![DHCP Server Installation](images/dhcp-server-installation.png)
+
 Client IP Configuration
 DHCP Server Installation
 DHCP Scope
