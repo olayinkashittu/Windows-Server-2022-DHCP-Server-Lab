@@ -111,7 +111,13 @@ The following items have been successfully verified:
 
 The following screenshot confirms that DC01 successfully obtained its IP configuration from the DHCP server.
 
-![DHCP Client IP Configuration](../images/client-ip-configuration.png)
+### 📸 Screenshots
+
+### DHCP Client IP Configuration
+
+DC01 successfully obtained an IPv4 address from the Windows Server 2022 DHCP server.
+
+![DHCP Client IP Configuration](images/client-ip-configuration.png)
 
 ## Verification Summary
 
