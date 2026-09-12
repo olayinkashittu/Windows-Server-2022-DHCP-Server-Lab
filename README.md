@@ -229,21 +229,9 @@ The screenshot shows a DHCP lease successfully assigned to a Windows client, con
 
 ![DHCP Server Installation](images/dhcp-server-installation.png)
 
+### Server Manager
 
-Client IP Configuration
-DHCP Server Installation
-DHCP Scope
-DHCP Options
-DHCP Lease
-Screenshots documenting the lab will be added as the configuration progresses.
-Planned screenshots:
-DHCP Server installation
-DHCP Server Manager
-DHCP scope configuration
-DHCP options
-DHCP lease
-Client IP configuration
-Connectivity verification
+![Server Manager](images/server-manager.png)
 
 ### 🛠️ Troubleshooting Highlights
 
